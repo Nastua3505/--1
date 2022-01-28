@@ -1,95 +1,186 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family:'Roboto', sans-serif;
-    font-size: 18px;
-  
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+header {
+  height: 100px;
+  background: #888888;
+  padding: 51px;
+}
+.logo-container {
+  float: left;
+}
+.name {
+  float: left;
+  margin: 18px;
+}
 
-}
-header{
-    background: #888888;
-    padding: 65px;
-    width: 1350;
-}
 .container {
-    position: absolute;
-    width: 312px;
-    height: 50px;
-    left: 200px;
-    top: 41px;
-    font-size: 48px;
-    text-decoration: none;
-    color: white;
-
-
-}
-.logo{
-    position: absolute;
-    width: 83px;
-    height: 88px;
-    left: 79px;
-    top: 26px;
-
-}
-.nav_link1{
-    position: absolute;
-    color: white;
-    height: 43px;
-    width: 155px;
-    left: 885px;
-    top:54px;
-    line-height: 28px;
-    font-size: 24px;
-    
-}
-.nav_link2{
-    position: absolute;
-    color: white;
-    height: 30px;
-    width: 121px;
-    left: 1047px;
-    top:55px;
-    line-height: 28px;
-    font-size: 24px;
-}
-.nav_link3{
-    position: absolute;
-    color: white;
-    height: 43px;
-    width: 272px;
-    left: 1188px;
-    top:55px;
-    line-height: 28px;
-    font-size: 24px;
+  font-size: 48px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
 
-.block{
-    border-bottom: 1px solid #771b1b;
-    
-
+nav {
+  float: right;
+  margin-top: 30px;
+}
+.logo {
+  width: 83px;
+  height: 88px;
+  left: 79px;
+  top: 26px;
 }
 
-.header-botton{
-    text-align: center;
-    padding: 16px 0;
-    border-bottom: 1px solid #888888;
+.nav_link1 {
+  color: white;
+  margin: 40px;
+  font-size: 24px;
+  line-height: 20px;
 }
-.text{
-    position: absolute;
-    width: 430px;
-    height: 21px;
-    left: 395px;
-    top: 137px;
-    color: #888888;
-   
+.nav_link2 {
+  color: white;
+  margin: 40px;
+  font-size: 24px;
 }
-
-.buttom{
-    position: absolute;
-    width: 135px;
-    height: 21px;
-    left: 885px;
-    top:135px;
-    color: #888888;
+.nav_link3 {
+  color: white;
+  margin: 40px;
+  font-size: 24px;
 }
 
+.header-botton {
+  text-align: center;
+  padding: 11px 0;
+  border-bottom: 1px solid #888888;
+}
+.text {
+  margin-right: 60px;
+  font-size: 18px;
+  color: #888888;
+}
+
+.buttom {
+  margin-right: 70px;
+  font-size: 18px;
+  color: #888888;
+}
+
+.first {
+  display: inline-block;
+  margin-bottom: 20%;
+  height: 500px;
+  width: 387px;
+  left: 0px;
+  top: 0px;
+  border-radius: 30px;
+  border: 1px solid #888888;
+  margin: 180px;
+  z-index: 0;
+  text-align: center;
+  font-size: 9px;
+  color: #888888;
+}
+
+.first button {
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  background-color: #888888;
+  text-align: unset;
+  height: 62px;
+  width: 276px;
+  left: 56px;
+  top: 405px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.second {
+  display: inline-block;
+  margin-bottom: 20%;
+  height: 500px;
+  width: 387px;
+  left: 0px;
+  top: 0px;
+  border-radius: 20px;
+  border: 1px solid #888888;
+  margin: 180px;
+  text-align: center;
+  z-index: 0;
+  font-size: 9px;
+  color: #888888;
+}
+
+.second button {
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  background-color: #888888;
+  text-align: center;
+  height: 62px;
+  width: 276px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.third {
+  display: inline-block;
+  margin-bottom: 20%;
+  height: 500px;
+  width: 387px;
+  left: 0px;
+  top: 0px;
+  border-radius: 30px;
+  border: 1px solid #888888;
+  margin: 180px;
+  z-index: 44px;
+  text-align: center;
+  font-size: 9px;
+  color: #888888;
+}
+
+.third button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #cccccc;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: 0.3s ease-in;
+}
+
+.fourth {
+  display: inline-block;
+  margin-bottom: 20%;
+  height: 500px;
+  width: 387px;
+  left: 0px;
+  top: 0px;
+  border-radius: 30px;
+
+  border: 1px solid #888888;
+  margin: 180px;
+  z-index: 0;
+  text-align: center;
+  font-size: 9px;
+  color: #888888;
+}
+
+.fourth button {
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  background-color: #888888;
+  text-align: center;
+  height: 62px;
+  width: 276px;
+  left: 56px;
+  top: 405px;
+  border-radius: 10px;
+  font-size: 24px;
+}
