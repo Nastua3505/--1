@@ -11,8 +11,6 @@ header {
 }
 .container {
   position: absolute;
-  width: 312px;
-  height: 50px;
   left: 200px;
   top: 41px;
   font-size: 48px;
@@ -30,8 +28,6 @@ header {
 .nav_link1 {
   position: absolute;
   color: white;
-  height: 43px;
-  width: 155px;
   left: 885px;
   top: 54px;
   line-height: 28px;
@@ -40,8 +36,6 @@ header {
 .nav_link2 {
   position: absolute;
   color: white;
-  height: 30px;
-  width: 121px;
   left: 1047px;
   top: 55px;
   line-height: 28px;
@@ -50,8 +44,6 @@ header {
 .nav_link3 {
   position: absolute;
   color: white;
-  height: 43px;
-  width: 272px;
   left: 1188px;
   top: 55px;
   line-height: 28px;
@@ -67,12 +59,11 @@ header {
   line-height: 28px;
 }
 .icon {
-  position: relative;
   float: right;
   width: 48px;
   height: 48px;
-  margin-bottom: 44px;
-  margin-top: 44px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .block {
@@ -110,6 +101,7 @@ header {
 }
 
 .first {
+  position: relative;
   display: inline-block;
   margin-bottom: 20%;
   height: 500px;
@@ -118,15 +110,12 @@ header {
   top: 0px;
   border-radius: 30px;
   border: 1px solid #888888;
-  margin: 120px;
-  text-align: center;
+  margin: 150px;
 }
 h2 {
   font-weight: 400;
   text-align: center;
   height: 100px;
-  left: 51px;
-  top: 325px;
   font-size: 24px;
   text-align: center;
   color: #888888;
@@ -140,7 +129,6 @@ h2 {
   color: white;
   background-color: #888888;
   text-align: center;
-  height: 62px;
   width: 276px;
   border-radius: 10px;
   font-size: 24px;
@@ -156,8 +144,7 @@ h2 {
   top: 0px;
   border-radius: 20px;
   border: 1px solid #888888;
-  margin: 120px;
-  text-align: center;
+  margin: 150px;
 }
 
 .second button {
@@ -168,7 +155,6 @@ h2 {
   color: white;
   background-color: #888888;
   text-align: center;
-  height: 62px;
   width: 276px;
   border-radius: 10px;
   font-size: 24px;
@@ -184,7 +170,7 @@ h2 {
   top: 0px;
   border-radius: 30px;
   border: 1px solid #888888;
-  margin: 120px;
+  margin: 160px;
   text-align: center;
 }
 
@@ -212,8 +198,7 @@ h2 {
   top: 0px;
   border-radius: 30px;
   border: 1px solid #888888;
-  margin: 120px;
-  text-align: center;
+  margin: 160px;
 }
 
 .fourth button {
@@ -224,7 +209,6 @@ h2 {
   color: white;
   background-color: #888888;
   text-align: center;
-  height: 62px;
   width: 276px;
   line-height: 30px;
   border-radius: 15px;
