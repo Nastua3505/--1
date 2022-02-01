@@ -136,8 +136,6 @@ header {
   margin-bottom: 20%;
   height: 500px;
   width: 387px;
-  left: 0px;
-  top: 0px;
   border-radius: 30px;
   border: 1px solid #888888;
   margin: 120px;
@@ -190,7 +188,6 @@ h2 {
   color: white;
   background-color: #888888;
   text-align: center;
-
   width: 276px;
   border-radius: 8px;
   font-size: 24px;
