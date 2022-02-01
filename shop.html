@@ -7,44 +7,68 @@
     </head>
         <body>
             <header>
-                <div class="logo-container">
-                    <a href="/" class="logo"><img src="C:\Users\HONOR\Downloads\OpROPHYqWmrMDBFMZtKF 1 (1).png" width="83" height="88" class="image" ></a>
-                    </div>
-                    <div class="name">
+                <div>
+                    <a href="/" class="logo"><img src="C:\Users\HONOR\Downloads\OpROPHYqWmrMDBFMZtKF 1 (1).png"width="83" height="88" ></a>
                     <a href="/" class="container">Магазин</a>
          </div>
+         <nav>
             <nav class="nav">   
                 <a class="nav_link1" href="#">Помощь</a>
                 <a class="nav_link2" href="#">О нас</a>
-                <a class="nav_link3" href="#">Зарегистрироваться</a> 
+                <a class="nav_link3" href="#">Зарегистрироваться</a>
             </nav>
-        </header>
+            <div class="icon"> 
+                <img src="C:\Users\HONOR\OneDrive\Рабочий стол\Vector.png"height="48px" width= "48px" alt="Корзина">
+              
+                <div class="range">
+              <div class="total"><div>
+              </div>    
+  </div>
+        </header>`
     </heder>
     <div class="header-botton">
         <span class="text"> В течении всего месяца скидка на все товары 50% </span>
         <a  href class="buttom">Начать покупки</a>
+
+        
          </div>
         </body>
-<body>
-    <div class="first">
-        <img src="C:\Users\HONOR\Downloads\Rectangle 3.png" alt="Гарри Потер и филосовский камень" >
-        <h1>Гарри Потер и филосовский камень</h1>
-        <p><button> В корзину</button></p>
-      </div>
-      <div class="second">
-        <img src="C:\Users\HONOR\Downloads\Rectangle 3 (1).png" alt="Вторая жизнь Уве" >
-        <h1>Вторая жизнь Уве</h1>
-        <p><button> В корзину</button></p>
-      </div>
-      <div class="third">
-        <img src="C:\Users\HONOR\Downloads\Rectangle 3 (2).png" alt="Цветы для Элджерона" >
-        <h1>Цветы для Элджерона</h1>
-        <p><button> В корзину</button></p>
-      </div>
-      <div class="fourth">
-        <img src="C:\Users\HONOR\Downloads\Rectangle 3 (3).png" alt="Гордость и Предубеждение" >
-        <h1>Гордость и Предубеждение</h1>
-        <p><button> В корзину</button></p>
-      </div>
-</body>
+        <body>
+            <div class="first">
+                <img class="book" src="C:\Users\HONOR\Downloads\Rectangle 3.png" alt="Гарри Потер и филосовский камень" >
+                <h2>Гарри Потер и филосовский камень</h2>
+                <button class="button" onClick="onClick();">В корзину</button>
+              </div>
+              <div class="second">
+                <img class="book"src="C:\Users\HONOR\Downloads\Rectangle 3 (1).png" alt="Вторая жизнь Уве" >
+                <h2>Вторая жизнь Уве</h2>
+                <button class="button" onClick="onClick();">В корзину</button>
+              </div>
+              <div class="third">
+                <img class="book"src="C:\Users\HONOR\Downloads\Rectangle 3 (2).png" alt="Цветы для Элджерона" >
+                <h2>Цветы для Элджерона</h2>
+                <button class="button" onClick="onClick();">В корзину</button>
+              </div>
+              <div class="fourth">
+                <img class="book"src="C:\Users\HONOR\Downloads\Rectangle 3 (3).png" alt="Гордость и предубеждение" >
+                <h2>Гордость и предубеждение</h2>
+                <button class="button" onClick="onClick();">В корзину</button>
+              </div>
+        </body>
+        <script>
+          let number = 0;
+          const buttons = document.querySelectorAll(".button");
+          const range = document.querySelector(".range"); 
+          const numberc = document.querySelector(".total"); 
+          numberc.textContent = number;
+          for (let index = 0; index < buttons.length; index++) { 
+          buttons[index].onclick = onClick; 
+          } 
+  
+         function onClick() {
+             range.style.visibility = "visible";
+             number++;
+             numberc.textContent = number;
+         }
+      </script>
         </html>
