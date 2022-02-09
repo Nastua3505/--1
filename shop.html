@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>shop</title> <link rel="stylesheet" href="shop-style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
     </head>
         <body>
             <header>
                 <div>
-                    <a href="/" class="logo"><img src="C:\Users\HONOR\Downloads\OpROPHYqWmrMDBFMZtKF 1 (1).png"width="83" height="88" ></a>
+                    <a href="/" class="logo"><img src="C:\Users\HONOR\Downloads\OpROPHYqWmrMDBFMZtKF 1 (1).png"width="83" height="88" alt="logo" ></a>
                     <a href="/" class="container">Магазин</a>
          </div>
          <nav>
@@ -18,8 +19,7 @@
                 <a class="nav_link3" href="#">Зарегистрироваться</a>
             </nav>
             <div class="icon"> 
-                <img src="C:\Users\HONOR\OneDrive\Рабочий стол\Vector.png"height="47px" width= "47px" alt="Корзина">
-            
+              <img src="C:\Users\HONOR\OneDrive\Рабочий стол\Vector.png"height="47px" width= "47px" alt="cart">
               <div class="total">
               </div>
   </div>
@@ -48,22 +48,13 @@
                 <h2>Цветы для Элджерона</h2>
                 <button class="button" onClick="onClick();">В корзину</button>
               </div>
-              <div class=" book-container">
+              <div class="book-container">
                 <img class="book"src="C:\Users\HONOR\Downloads\Rectangle 3 (3).png" alt="Гордость и предубеждение" >
                 <h2>Гордость и предубеждение</h2>
                 <button class="button" onClick="onClick();">В корзину</button>
               </div>
-        </body>
-        <script>
-            let number = 0;
-          const button = document.querySelectorAll(".button");
-          const numberc = document.querySelector(".total"); 
-          numberc.textContent = number;
-
-          function onClick() {
-             number++;
-             numberc.textContent = number;
-             
-         }
-      </script>
+      
+            <script src="script.js"></script>
+            
+      </body>
         </html>
