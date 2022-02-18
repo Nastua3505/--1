@@ -95,27 +95,39 @@ body {
   width: 32px;
   height: 32px;
 }
+
+.book-element {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 387px;
+  height: 500px;
+  border: solid 1px #888888;
+  border-radius: 15px;
+  margin-top: 85px;
+  margin-bottom: 28px;
+}
 .book {
+  flex-basis: auto;
   height: 258px;
   width: 153px;
   margin-top: 38px;
   margin-right: 117px;
   margin-left: 117px;
 }
-
-.book-container {
-  margin-top: 85px;
-  width: 378px;
-  text-align: center;
-  padding-top: 38px;
-  border: 1px solid #888888;
-  border-radius: 30px;
-}
 h2 {
-  margin: 0 auto;
   width: 286px;
   height: 83px;
-  margin-top: 29px;
+  text-align: center;
+  font-size: 24px;
   color: #888888;
 }
 
