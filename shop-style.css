@@ -1,81 +1,93 @@
 body {
-  padding: 0;
   margin: 0;
+
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
 }
 
-header {
-  background: #888888;
-  padding: 65px;
-  width: 1350;
+.header {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
 }
 .container {
-  position: absolute;
-  width: 312px;
-  height: 50px;
-  left: 200px;
-  top: 41px;
+  height: 141px;
+  display: flex;
+  align-items: center;
+  color: white;
   font-size: 48px;
   text-decoration: none;
-  color: white;
-}
-.logo {
-  position: absolute;
-  width: 83px;
-  height: 88px;
-  left: 79px;
-  top: 26px;
+  justify-content: space-between;
+  background: #888;
 }
 
-.nav_link1 {
-  position: absolute;
-  color: white;
-  height: 43px;
-  width: 155px;
-  left: 885px;
-  top: 54px;
-  line-height: 28px;
+@media screen and (max-width: 512px) {
+  .container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+}
+
+.container-shop {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: #fff;
+}
+.logo {
+  padding: 40px;
+}
+
+.nav-shop {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
   font-size: 24px;
+
+  text-decoration: none;
 }
-.nav_link2 {
-  position: absolute;
+@media screen and (max-width: 512px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .nav-shop {
+    flex-basis: 100%;
+  }
+
+  .nav {
+    flex-basis: 100%;
+  }
+}
+
+.link {
+  margin-left: 60px;
   color: white;
-  height: 30px;
-  width: 121px;
-  left: 1047px;
-  top: 55px;
-  line-height: 28px;
-  font-size: 24px;
+  text-decoration: none;
 }
-.nav_link3 {
-  position: absolute;
-  color: white;
-  height: 43px;
-  width: 272px;
-  left: 1188px;
-  top: 55px;
-  line-height: 28px;
-  font-size: 24px;
+
+.link:hover {
+  text-decoration: underline;
 }
-.nav_link4 {
-  position: absolute;
-  color: white;
-  height: 141px;
-  border-radius: 0px;
-  left: 1188px;
-  top: 55px;
-  line-height: 28px;
-}
+
 .icon {
+  margin-left: 50px;
   position: relative;
-  float: right;
-  margin-bottom: 44px;
-  margin-top: 44px;
-  height: 48px;
-  width: 48px;
-  left: 35px;
-  top: -60px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 512px) {
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 65px;
+  }
 }
 
 .block {
@@ -84,25 +96,18 @@ header {
 
 .header-botton {
   text-align: center;
-  padding: 7px 0;
   border-bottom: 1px solid #888888;
 }
 .text {
-  position: absolute;
-  width: 430px;
-  height: 21px;
-  left: 395px;
-  top: 137px;
-  color: #888888;
+  margin-right: 62px;
+  font-size: 18px;
+  color: #888;
 }
 
 .buttom {
-  position: absolute;
-  width: 135px;
-  height: 21px;
-  left: 885px;
-  top: 135px;
-  color: #888888;
+  font-size: 18px;
+  color: #888;
+  text-decoration: none;
 }
 
 .total {
@@ -122,38 +127,55 @@ header {
   width: 32px;
   height: 32px;
 }
+
+.book-element {
+  margin-left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 387px;
+  height: 500px;
+  border: solid 1px #888888;
+  border-radius: 15px;
+  margin-top: 85px;
+  margin-bottom: 28px;
+}
+@media screen and (max-width: 512px) {
+  .book-container {
+    flex-wrap: wrap;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .book-element {
+    width: 60%;
+  }
+}
 .book {
+  flex-basis: auto;
   height: 258px;
   width: 153px;
   margin-top: 38px;
   margin-right: 117px;
   margin-left: 117px;
 }
-
-.book-container {
-  display: inline-block;
-  margin-bottom: 20%;
-  height: 500px;
-  width: 387px;
-  border-radius: 30px;
-  border: 1px solid #888888;
-  margin: 150px;
-  text-align: center;
-}
 h2 {
-  font-weight: 400;
+  width: 286px;
+  height: 83px;
   text-align: center;
-  height: 100px;
-  left: 51px;
-  top: 325px;
   font-size: 24px;
-  text-align: center;
   color: #888888;
-  font-family: "Roboto", sans-serif;
 }
 
 .button {
-  padding: 12px 83px;
+  padding: 10px 75px;
   background-color: #888888;
   border-radius: 8px;
   color: white;
