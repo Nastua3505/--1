@@ -20,11 +20,19 @@ body {
   justify-content: space-between;
   background: #888;
 }
-.header .container.fixed {
-  position: fixed;
+
+@media screen and (max-width: 512px) {
+  .container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
 }
+
 .container-shop {
   display: flex;
+  flex-basis: 100%;
   align-items: center;
   color: #fff;
 }
@@ -38,10 +46,26 @@ body {
 }
 
 .nav {
+  display: flex;
   font-size: 24px;
-  font-weight: 800;
+
   text-decoration: none;
 }
+@media screen and (max-width: 512px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .nav-shop {
+    flex-basis: 100%;
+  }
+
+  .nav {
+    flex-basis: 100%;
+  }
+}
+
 .link {
   margin-left: 60px;
   color: white;
@@ -56,6 +80,14 @@ body {
   margin-left: 50px;
   position: relative;
   padding-right: 50px;
+}
+
+@media screen and (max-width: 512px) {
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 65px;
+  }
 }
 
 .block {
@@ -97,7 +129,6 @@ body {
 }
 
 .book-element {
-  width: 60%;
   margin-left: 20%;
   display: flex;
   flex-wrap: wrap;
@@ -114,6 +145,18 @@ body {
   border-radius: 15px;
   margin-top: 85px;
   margin-bottom: 28px;
+}
+@media screen and (max-width: 512px) {
+  .book-container {
+    flex-wrap: wrap;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .book-element {
+    width: 60%;
+  }
 }
 .book {
   flex-basis: auto;
